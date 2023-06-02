@@ -1,0 +1,38 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: arial-black, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #040;
+}
+
+#container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+span {
+	width: 100%;
+	text-align: center;
+	font-size: 8vh;
+	color: hsl(calc(120deg - (16deg * var(--rng-level))) 100% max(40%, calc(90% - (2% * var(--rng-level)))));
+	text-shadow: 0 0 calc(2px * var(--rng-level)) hsl(calc(120deg - (16deg * var(--rng-level))) 100% max(40%, calc(90% - (2% * var(--rng-level)))));
+}
+
+#container > div {
+	width: calc(100% - 16px);
+	text-align: center;
+	font-size: 8vh;
+	cursor: pointer;
+	user-select: none;
+	border: 8px solid white;
+	color: white;
+}
+
+#container > div:hover {
+	background-color: white;
+	color: black;
+}
